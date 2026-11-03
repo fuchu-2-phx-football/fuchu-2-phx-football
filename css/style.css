@@ -1,28 +1,30 @@
 /* ==========================================================================
    府中2FC (府中第二フェニックス) 公式ホームページ スタイルシート
    カラーパレット:
-   - Primary: #0B4EA2 (Phoenix Royal Blue)
+   - Primary: #0062FF (Phoenix Vivid Blue)
    - Secondary: #FFD100 (Phoenix Yellow)
    - Accent Dark: #0F223D (Deep Navy)
-   - Base Dark: #1A202C (Charcoal Text)
-   - Base Light: #F8FAFC (Light Gray BG)
-   - Border: #E2E8F0
+   - Base Dark: #222222 (Modern Charcoal Text)
+   - Text Muted: #666666 (Slate Gray)
+   - Base Light: #F8F9FA (Soft Gray BG)
+   - Base White: #FFFFFF (Pure White)
+   - Border: #E5E7EB
    ========================================================================== */
 
 :root {
-  --primary: #0B4EA2;
-  --primary-hover: #083c7d;
-  --primary-light: #e8f1fc;
+  --primary: #0062FF;
+  --primary-hover: #004ecc;
+  --primary-light: #e6f0ff;
   --secondary: #FFD100;
   --secondary-hover: #e6bd00;
   --accent-dark: #0F223D;
-  --text-main: #1A202C;
-  --text-muted: #64748B;
-  --bg-light: #F8FAFC;
+  --text-main: #222222;
+  --text-muted: #666666;
+  --bg-light: #F8F9FA;
   --bg-white: #FFFFFF;
-  --border-color: #E2E8F0;
+  --border-color: #E5E7EB;
   --success: #2E7D32;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 12px rgba(15, 34, 61, 0.08);
   --shadow-lg: 0 10px 25px rgba(15, 34, 61, 0.12);
   --radius-sm: 6px;
