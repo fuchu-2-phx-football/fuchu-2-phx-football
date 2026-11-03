@@ -103,7 +103,7 @@
           
           <div class="form-group">
             <label class="form-label" for="category">お問い合わせ種別 <span class="form-req">必須</span></label>
-            <select id="category" class="form-control" required>
+            <select id="category" name="category" class="form-control" required>
               <option value="">-- 選択してください --</option>
               <option value="trial-infant">幼児練習会への体験参加</option>
               <option value="trial-elementary">学年別（1〜6年）体験練習への参加</option>
@@ -114,27 +114,27 @@
 
           <div class="form-group">
             <label class="form-label" for="parent-name">保護者様・ご担当者様のお名前 <span class="form-req">必須</span></label>
-            <input type="text" id="parent-name" class="form-control" placeholder="例: 府中 太郎" required>
+            <input type="text" id="parent-name" name="parent_name" class="form-control" autocomplete="name" placeholder="例: 府中 太郎" required>
           </div>
 
           <div class="form-group">
             <label class="form-label" for="email">メールアドレス <span class="form-req">必須</span></label>
-            <input type="email" id="email" class="form-control" placeholder="例: example@domain.com" required>
+            <input type="email" id="email" name="email" class="form-control" autocomplete="email" placeholder="例: example@domain.com" required>
           </div>
 
           <div class="form-group">
             <label class="form-label" for="phone">お電話番号 <span class="form-opt">任意</span></label>
-            <input type="tel" id="phone" class="form-control" placeholder="例: 090-1234-5678">
+            <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel" placeholder="例: 090-1234-5678">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="child-info">お子様の学年・お名前（体験希望の場合） <span class="form-opt">任意</span></label>
-            <input type="text" id="child-info" class="form-control" placeholder="例: 年中（5歳）、小学2年生 男子 など">
+            <input type="text" id="child-info" name="child_info" class="form-control" placeholder="例: 年中（5歳）、小学2年生 男子 など">
           </div>
 
           <div class="form-group">
             <label class="form-label" for="message">お問い合わせ内容・希望日程など <span class="form-req">必須</span></label>
-            <textarea id="message" class="form-control" placeholder="例: 〇月〇日の幼児練習会に参加希望です。サッカーは初めてですがよろしくお願いします。" required></textarea>
+            <textarea id="message" name="message" class="form-control" placeholder="例: 〇月〇日の幼児練習会に参加希望です。サッカーは初めてですがよろしくお願いします。" required></textarea>
           </div>
 
           <div style="background-color: var(--bg-light); padding: 16px; border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">
