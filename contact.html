@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ・体験申込み | 府中2FC (府中第二フェニックスFC)</title>
+  <meta name="description" content="府中2FC（府中第二フェニックス）への幼児練習会・体験練習のお申込み、練習試合（TM）のお誘い、その他お問い合わせはこちらから受付しております。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .form-group {
+      margin-bottom: 22px;
+    }
+    .form-label {
+      display: block;
+      font-weight: 700;
+      color: var(--accent-dark);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    .form-req {
+      background-color: #ef4444;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+    .form-opt {
+      background-color: #94a3b8;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-family: inherit;
+      background-color: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(11, 78, 162, 0.15);
+    }
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">2FC</div>
+        <div class="brand-text">
+          <span class="club-name">府中2FC</span>
+          <span class="club-sub">府中二小フェニックスFC (設立1977年)</span>
+        </div>
+      </a>
+      <button class="mobile-toggle" aria-label="メニュー開閉" aria-expanded="false">☰</button>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">ホーム</a></li>
+          <li><a href="about.html" class="nav-link">チーム紹介</a></li>
+          <li><a href="schedule.html" class="nav-link">練習時間・日程</a></li>
+          <li><a href="news.html" class="nav-link">お知らせ</a></li>
+          <li><a href="contact.html" class="nav-link active">お問い合わせ</a></li>
+          <li><a href="join.html" class="nav-cta">⚽ 体験・部員募集</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>お問い合わせ・体験お申込み</h1>
+      <p>Contact Us & Application</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container" style="max-width: 800px;">
+
+      <div class="content-block">
+        <h2>お問い合わせフォーム</h2>
+        <p style="margin-bottom: 24px; color: var(--text-muted); font-size: 0.95rem;">
+          幼児練習会や学年別の体験練習参加、練習試合（TM）のお申込み、クラブに関するご質問など、お気軽にお問い合わせください。担当者より数日以内にご連絡いたします。
+        </p>
+
+        <!-- Form (Google Forms or Static Action ready) -->
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('お問い合わせありがとうございます。担当者より折り返しご連絡いたします。（※本番運用時はGoogle Forms連携または指定のアドレスへ送信されます）');">
+          
+          <div class="form-group">
+            <label class="form-label" for="category">お問い合わせ種別 <span class="form-req">必須</span></label>
+            <select id="category" class="form-control" required>
+              <option value="">-- 選択してください --</option>
+              <option value="trial-infant">幼児練習会への体験参加</option>
+              <option value="trial-elementary">学年別（1〜6年）体験練習への参加</option>
+              <option value="match">練習試合（TM）・交流戦のお誘い</option>
+              <option value="other">その他・クラブへのご質問</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="parent-name">保護者様・ご担当者様のお名前 <span class="form-req">必須</span></label>
+            <input type="text" id="parent-name" class="form-control" placeholder="例: 府中 太郎" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">メールアドレス <span class="form-req">必須</span></label>
+            <input type="email" id="email" class="form-control" placeholder="例: example@domain.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">お電話番号 <span class="form-opt">任意</span></label>
+            <input type="tel" id="phone" class="form-control" placeholder="例: 090-1234-5678">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="child-info">お子様の学年・お名前（体験希望の場合） <span class="form-opt">任意</span></label>
+            <input type="text" id="child-info" class="form-control" placeholder="例: 年中（5歳）、小学2年生 男子 など">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">お問い合わせ内容・希望日程など <span class="form-req">必須</span></label>
+            <textarea id="message" class="form-control" placeholder="例: 〇月〇日の幼児練習会に参加希望です。サッカーは初めてですがよろしくお願いします。" required></textarea>
+          </div>
+
+          <div style="background-color: var(--bg-light); padding: 16px; border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">
+            ※ ご入力いただいた個人情報は、体験練習のご連絡およびお問い合わせへの回答のみに使用し、第三者への提供は一切行いません。
+          </div>
+
+          <div style="text-align: center;">
+            <button type="submit" class="btn btn-primary" style="font-size: 1.1rem; padding: 16px 48px; border: none;">
+              送信する（内容確認）
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>府中2FC</h3>
+          <p>
+            府中二小フェニックスフットボールクラブ<br>
+            設立: 1977年<br>
+            活動場所: 東京都府中市 府中市立第二小学校グラウンド<br>
+            府中市の子供達を中心に約100名の選手たちが元気に活動しています。
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">メニュー</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">チーム紹介</a></li>
+            <li><a href="schedule.html">練習時間・日程</a></li>
+            <li><a href="news.html">お知らせ一覧</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">ご案内・お問い合わせ</h4>
+          <ul class="footer-links">
+            <li><a href="join.html">体験・部員募集</a></li>
+            <li><a href="posts/join-trial.html">幼児練習会について</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2026 府中2FC (府中二小フェニックスフットボールクラブ). All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
